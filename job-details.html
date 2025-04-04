@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details | Internee.pk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .job-highlights li::before {
+            content: "•";
+            color: #4f46e5;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="text-indigo-600 font-bold text-xl">Internee.pk</a>
+                    </div>
+                    <div class="hidden md:ml-6 md:flex md:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="jobs.html" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Jobs</a>
+                        <a href="about.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                        <a href="contact.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <a href="signup.html" class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white shadow rounded-lg p-6">
+            <!-- Job Header -->
+            <div class="flex items-start justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">Frontend Developer Intern</h1>
+                    <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <span>Techlogix</span>
+                        <span class="mx-2">•</span>
+                        <span>Karachi, Pakistan</span>
+                        <span class="mx-2">•</span>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <button class="text-gray-400 hover:text-indigo-500 text-2xl">
+                    <i class="far fa-bookmark"></i>
+                </button>
+            </div>
+
+            <!-- Job Tags -->
+            <div class="mt-6 flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">React</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">JavaScript</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">HTML/CSS</span>
+            </div>
+
+            <!-- Job Details -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex items-center">
+                    <i class="fas fa-briefcase text-indigo-500 mr-2"></i>
+                    <div>
+                        <p class="text-xs text-gray-500">Job Type</p>
+                        <p class="text-sm font-medium text-gray-900">Internship</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-calendar-alt text-indigo-500 mr-2"></i>
+                    <div>
+                        <p class="text-xs text-gray-500">Duration</p>
+                        <p class="text-sm font-medium text-gray-900">3 months</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-money-bill-wave text-indigo-500 mr-2"></i>
+                    <div>
+                        <p class="text-xs text-gray-500">Salary</p>
+                        <p class="text-sm font-medium text-gray-900">PKR 25,000/month</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Description -->
+            <div class="mt-8">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">Job Description</h2>
+                <div class="prose max-w-none text-gray-600">
+                    <p>We're looking for a passionate Frontend Developer Intern to join our team at Techlogix. In this role, you'll work alongside our experienced developers to build responsive, user-friendly web applications using modern frontend technologies.</p>
+                    
+                    <h3 class="text-lg font-semibold text-gray-900 mt-6">Responsibilities:</h3>
+                    <ul class="job-highlights list-disc pl-5 space-y-2">
+                        <li>Develop new user-facing features using React.js</li>
+                        <li>Build reusable components and front-end libraries</li>
+                        <li>Translate designs into high-quality code</li>
+                        <li>Optimize components for maximum performance</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mt-6">Requirements:</h3>
+                    <ul class="job-highlights list-disc pl-5 space-y-2">
+                        <li>Basic understanding of React.js and JavaScript</li>
+                        <li>Familiarity with HTML5, CSS3</li>
+                        <li>Knowledge of RESTful APIs</li>
+                        <li>Currently enrolled in Computer Science program</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply Button -->
+            <div class="mt-8">
+                <button class="w-full md:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Company Info -->
+        <div class="mt-6 bg-white shadow rounded-lg p-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">About Techlogix</h2>
+            <p class="text-gray-600">
+                Techlogix is a leading software development company in Pakistan, specializing in enterprise solutions and digital transformation services for clients worldwide.
+            </p>
+        </div>
+
+        <!-- Similar Jobs -->
+        <div class="mt-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Similar Internships</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h3 class="text-lg font-medium text-gray-900">React Developer Intern</h3>
+                    <p class="mt-1 text-sm text-gray-500">Systems Ltd | Lahore, Pakistan</p>
+                    <p class="mt-2 text-gray-600">PKR 30,000/month</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h3 class="text-lg font-medium text-gray-900">UI/UX Intern</h3>
+                    <p class="mt-1 text-sm text-gray-500">10Pearls | Karachi, Pakistan</p>
+                    <p class="mt-2 text-gray-600">PKR 20,000/month</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">For Candidates</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Browse Jobs</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Candidate Dashboard</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">My Applications</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">For Employers</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Post a Job</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Browse Candidates</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Employer Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="about.html" class="text-base text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Team</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2023 Internee.pk. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Bookmark functionality
+        document.querySelector('.fa-bookmark').addEventListener('click', function() {
+            if (this.classList.contains('far')) {
+                this.classList.remove('far');
+                this.classList.add('fas');
+                this.style.color = '#4f46e5';
+            } else {
+                this.classList.remove('fas');
+                this.classList.add('far');
+                this.style.color = '';
+            }
+        });
+    </script>
+</body>
+</html>
